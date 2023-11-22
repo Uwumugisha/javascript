@@ -18,5 +18,5 @@ var myName = n + m;
 console.log(myName);
 var myName = "my name is ";
 myName += "chersana";
-console.log(myName);
+console.log(myName);m
  
