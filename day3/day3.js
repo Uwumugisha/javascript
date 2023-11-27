@@ -26,6 +26,7 @@ else{
     console.log("me");
 }
 //using functions in javascript
+"use strict";
 let num1 = "chersana";
 let num2 = "1234";
 function functionName(num1,num2){
