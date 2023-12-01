@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            let user = prompt('injiza *182#:');
+            let balance = 100000;
+            if(user == '*182#'){
+                user = prompt("1.send money \n 2.buy \n 3.pay bills\n 4.bank services \n 5.loans and savings \n 6.my momom account \n 7.pending approvals \n 8.momo pay \n 9.my momo security \n n next: ");
+                switch(user){
+                    case 1:
+                        let sendMoney = prompt('1. momo user \n 2.send to e kash \n 3.across the region \n 4.cancel voucher \n 5.display voucher \n 6.list active voucher \n 7.international transfer \n 8. \n n next:');
+                        // switch(sendMoney)
+                        if(sendMoney == 1){
+                            let phoneNumber = prompt("enter recipient's mobile number(format 07xxxxxxxx): ");
+                            if(phoneNumber === Number && phoneNumber == '10 numbers'){
+                                let amount = prompt("enter amount to send to 250783288604 chersana uwumugisha:")
+                                let charge = amount * 0.1;
+                            }else{
+                                alert('invalid number');
+                            }
+                            if(amount > 100){
+                                let pin = prompt(`you entered: chersana uwumugisha 250783288604, ${amount}. a fee of rwf ${charge} will be  applicable to comfirm send money to mobile, enter PIN: `);
+                    
+                                if(pin === 29292){
+                                    let date = new Date();
+                                    let year = date.getFullYear();
+                                    balance = balance - (amount + charge);
+                                    alert(`*165*s*${amount} rwf transferred to chersana uwumugisha(0783288604) from 124232 at ${year}. fee was ${charge} rwf new balance: ${balance}rwf:` );
+
+                                }else{
+                                    alert('invalid pin');
+                                }
+                            }else{
+                                alert('sorry your payment is below the minimum amount of rwf 100');
+                            }
+                            
+                        }
+                        break;
+                        case 2:
+                        break;
+                        case 3:
+                          break;
+                          default:
+                            alert('choose another option') ; 
+                    }
+                
+
+
+            }
+            else{
+                alert('unknown application');
+            }
+    </script>
+</body>
+</html>

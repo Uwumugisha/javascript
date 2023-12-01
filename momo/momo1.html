@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .popup{
+            visibility: hidden;
+        }
+        .open-popup{
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+   <form action="#">
+    <div class="">
+        <!-- for *182# -->
+    
+        <label for="button">enter *182#:</label><br>
+        <input type="text" name="" class="send" placeholder="*182#" required><br>
+        <button type="submit" onclick="openPopup()" class="btn">send</button>
+       
+       <!-- first option -->
+       <div class="popup" id="popup">
+        <label for="text">
+<pre>
+        1.send money 
+        2.buy 
+        3.pay bills 
+        4.bank services 
+        5.loans and savings 
+        6.my momom account
+        7.pending approvals 
+        8.momo pay 
+        9.my momo security 
+        n next:
+</pre>
+        </label>
+        <input type="text" placeholder="1, 2, 3,....."><br>
+        <button type="submit" onclick="closePopup() ">ok</button>
+        <button type="button" class="open-popup()">send</button>
+       </div>
+       <div class="popup" id="popup">
+        <label for="text">
+        <pre>
+        1. momo user 
+        2.send to e kash
+        3.across the region 
+        4.cancel voucher
+        5.display voucher 
+        6.list active voucher
+        7.international transfer 
+        8.
+        n next:
+    </pre>
+    </label>
+        <input type="text" placeholder="1, 2, 3,....."><br>
+        <button type="button" onclick="closePopup()">send</button>
+       </div>
+    </div>
+
+   </form> 
+   <script>
+    let popup = document.getElementById("popup");
+    let code = '*182#';
+    function openPopup(){
+        
+        if(code == '*182#'){
+           return(popup.classList.add("open-popup"));
+        }else{
+            return('invalid number')
+        }
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup")
+    }
+   </script>
+</body>
+</html>
